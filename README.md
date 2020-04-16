@@ -1,1 +1,2 @@
-# thuexe
+# Bài tập thiết kế và dựng giao diện website
+Techs: HTML/CSS3, Bootstrap 4, Javascript/Jquery,...
