@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <title>Chi tiết hóa đơn</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!--Front-Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css?fbclid=IwAR2RxPg5srJ2_UhPB6BSgr-lvfxz4_AylOeRXhXkqZ9btpjAt7DppQ3Ad8I">
+    <!--style-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!--header-->
+<header>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-md">
+            <!-- Brand -->
+            <a class="navbar-brand" href="trangchu.html"><img class="h-logo" src="images/Logo.png" alt="Logo"></a>
+
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler ml-auto" type="button">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="h-link nav-link" href="#">Giới thiệu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="h-email nav-link" href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><img src="images/bn-vietnam.jpg" alt="VN"></a>
+                    </li>
+                    <li class="nav-item">
+                        <div class="h-user dropdown">
+                            <button class="h-user__btn dropdown-toggle" type="button" data-toggle="dropdown">
+                                <img class="h-user__avt" src="./images/avatar.JPG" alt="avatar">
+                                <span class="h-user__name">Trần Văn Nam</span>
+                            </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="customer.html">Trang cá nhân</a>
+                                <a class="dropdown-item" href="quytrinhlamchuxe.html">Làm nhà xe</a>
+                                <a class="dropdown-item" href="#">Đăng xuất</a>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- sign -->
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<!--owner-nav-->
+<div class="container">
+    <nav class="owner-nav">
+        <!-- Links -->
+        <ul class="owner-nav__list">
+            <li class="owner-nav__item">
+                <a class="owner-nav__link active" href="danhsachthuexe.html">
+                    <i class="fa fa-list" aria-hidden="true"></i>
+                    <span class="owner-nav__txt">Danh sách thuê</span>
+                </a>
+                <!--<span class="owner-nav__line">|</span>-->
+            </li>
+            <li class="owner-nav__item">
+                <a class="owner-nav__link" href="lich.html">
+                    <i class="fa fa-tag" aria-hidden="true"></i>
+                    <span class="owner-nav__txt">Lịch</span>
+                </a>
+                <!--<span class="owner-nav__line">|</span>-->
+            </li>
+            <li class="owner-nav__item">
+                <a class="owner-nav__link" href="danhgia.html">
+                    <i class="fa fa-tag" aria-hidden="true"></i>
+                    <span class="owner-nav__txt">Đánh giá </span>
+                </a>
+                <!--<span class="owner-nav__line">|</span>-->
+            </li>
+            <li class="owner-nav__item">
+                <a class="owner-nav__link" href="bieudo.html">
+                    <i class="fa fa-tag" aria-hidden="true"></i>
+                    <span class="owner-nav__txt">Biểu đồ</span>
+                </a>
+                <!--<span class="owner-nav__line">|</span>-->
+            </li>
+            <li class="owner-nav__item">
+                <a class="owner-nav__link" href="khuyenmai.html">
+                    <i class="fa fa-tag" aria-hidden="true"></i>
+                    <span class="owner-nav__txt">Khuyến mãi</span>
+                </a>
+                <!--<span class="owner-nav__line">|</span>-->
+            </li>
+            <li class="owner-nav__item">
+                <a class="owner-nav__link" href="thongtinnhaxe.html">
+                    <i class="fa fa-tag" aria-hidden="true"></i>
+                    <span class="owner-nav__txt">Thông tin nhà xe</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</div>
+
+<!--.booked in datxe.html-->
+<section class="bill booked">
+    <div class="bill__nav">
+        <a class="nav-link" href="danhsachthuexe.html">Danh sách thuê xe</a>
+        <span>|</span>
+        <a class="nav-link font-weight-bold" href="chitiethoadoncuaKH.html">Chi tiết đơn hàng</a>
+    </div>
+    <div class="container">
+        <div class="booked__content">
+            <p class="font-weight-bold">Ngày 12/3/2019</p>
+            <div class="bill__name">
+                <img class="user-avt" src="./images/avatar.JPG" alt="avatar">
+                <p class="user-name">Trần Văn Nam</p>
+            </div>
+            <div class="row">
+                <p class="col-sm-6 font-weight-bold">Nhà xe: Nguyễn Văn Anh</p>
+                <p class="col-sm-6">Mã đặt: <span class="font-weight-bold">9999999</span></p>
+            </div>
+            <div class="row">
+                <p class="col-sm-6">Ngày đặt: Thứ 6, 15-3-2019</p>
+                <p class="col-sm-6">Ngày trả: Thứ 3, 18-3-2019</p>
+            </div>
+            <p>Địa điểm nhận xe: Số 21, Nguyễn Văn Trỗi, Hà Đông, Hà Nội</p>
+
+            <table class="table table-sm table-bordered">
+                <thead>
+                <tr>
+                    <td scope="col">Loại xe</td>
+                    <td scope="col">Số lượng</td>
+                    <td scope="col">Giá</td>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td scope="row">Xe 7 chỗ</td>
+                    <td>1</td>
+                    <td>800.000 VND</td>
+                </tr>
+                <tr>
+                    <td scope="row">Xe 4 chỗ</td>
+                    <td>1</td>
+                    <td>500.000 VND</td>
+                </tr>
+                </tbody>
+            </table>
+            <form>
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="customCheck" name="example1">
+                    <label class="custom-control-label" for="customCheck">Phụ phí</label>
+                </div>
+            </form>
+            <table class="table table-sm table-bordered">
+                <thead>
+                <tr>
+                    <td scope="col">
+                        Loại phụ phí
+                    </td>
+                    <td scope="col">
+                        Số lượng
+                    </td>
+                    <td scope="col">
+                        Giá
+                    </td>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td scope="row">
+                        Lều trại
+                    </td>
+                    <td>
+                        <span>2</span>Số lượng
+                    </td>
+                    <td>
+                        160.000 VND
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            <div class="text-right">Tổng tiền:<span class="font-weight-bold"> 4.380.000 VND</span></div>
+
+            <div class="form-group">
+                <label for="comment">Ghi chú:</label>
+                <textarea class="form-control" placeholder="Nhập văn bản" cols="100%" rows="2" id="comment"></textarea>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--footer-->
+<footer class="f-sub">
+    <ul class="f-sub-nav">
+        <li><a href="#">Về chúng tôi</a><span>|</span></li>
+        <li><a href="#">Điều khoản</a><span>|</span></li>
+        <li><a href="#">Chính sách bảo mật</a></li>
+    </ul>
+    <p class="f-sub-copyright">Copyright &copy; 2019 <span>INNO VEH</span> </p>
+</footer>
+
+</body>
+</html>

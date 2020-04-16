@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <title>Biểu đồ</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!--Front-Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css?fbclid=IwAR2RxPg5srJ2_UhPB6BSgr-lvfxz4_AylOeRXhXkqZ9btpjAt7DppQ3Ad8I">
+    <!--style-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!--header-->
+<header>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-md">
+            <!-- Brand -->
+            <a class="navbar-brand" href="trangchu.html"><img class="h-logo" src="images/Logo.png" alt="Logo"></a>
+
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler ml-auto" type="button">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="h-link nav-link" href="#">Giới thiệu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="h-email nav-link" href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><img src="images/bn-vietnam.jpg" alt="VN"></a>
+                    </li>
+                    <li class="nav-item">
+                        <div class="h-user dropdown">
+                            <button class="h-user__btn dropdown-toggle" type="button" data-toggle="dropdown">
+                                <img class="h-user__avt" src="./images/avatar.JPG" alt="avatar">
+                                <span class="h-user__name">Trần Văn Nam</span>
+                            </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="customer.html">Trang cá nhân</a>
+                                <a class="dropdown-item" href="quytrinhlamchuxe.html">Làm nhà xe</a>
+                                <a class="dropdown-item" href="#">Đăng xuất</a>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- sign -->
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<!--owner-nav-->
+<div class="container">
+    <nav class="owner-nav">
+        <!-- Links -->
+        <ul class="owner-nav__list">
+            <li class="owner-nav__item">
+                <a class="owner-nav__link active" href="danhsachthuexe.html">
+                    <i class="fa fa-list" aria-hidden="true"></i>
+                    <span class="owner-nav__txt">Danh sách thuê</span>
+                </a>
+                <!--<span class="owner-nav__line">|</span>-->
+            </li>
+            <li class="owner-nav__item">
+                <a class="owner-nav__link" href="lich.html">
+                    <i class="fa fa-tag" aria-hidden="true"></i>
+                    <span class="owner-nav__txt">Lịch</span>
+                </a>
+                <!--<span class="owner-nav__line">|</span>-->
+            </li>
+            <li class="owner-nav__item">
+                <a class="owner-nav__link" href="danhgia.html">
+                    <i class="fa fa-tag" aria-hidden="true"></i>
+                    <span class="owner-nav__txt">Đánh giá </span>
+                </a>
+                <!--<span class="owner-nav__line">|</span>-->
+            </li>
+            <li class="owner-nav__item">
+                <a class="owner-nav__link" href="bieudo.html">
+                    <i class="fa fa-tag" aria-hidden="true"></i>
+                    <span class="owner-nav__txt">Biểu đồ</span>
+                </a>
+                <!--<span class="owner-nav__line">|</span>-->
+            </li>
+            <li class="owner-nav__item">
+                <a class="owner-nav__link" href="khuyenmai.html">
+                    <i class="fa fa-tag" aria-hidden="true"></i>
+                    <span class="owner-nav__txt">Khuyến mãi</span>
+                </a>
+                <!--<span class="owner-nav__line">|</span>-->
+            </li>
+            <li class="owner-nav__item">
+                <a class="owner-nav__link" href="thongtinnhaxe.html">
+                    <i class="fa fa-tag" aria-hidden="true"></i>
+                    <span class="owner-nav__txt">Thông tin nhà xe</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</div>
+
+<!--TODO-->
+<!--only html-->
+
+<div class="col-md-8 offset-md-2 my-5">
+    <div class="card">
+        <div class="card-body">
+            <div class="row">
+                <div class="form-group">
+                    <label for="sel1">
+                        <select class="form-control" id="sel1">
+                            <option>Tháng 1</option>
+                            <option>Tháng 2</option>
+                            <option>Tháng 3</option>
+                            <option>Tháng 4</option>
+                            <option>Tháng 5</option>
+                            <option>Tháng 6</option>
+                            <option>Tháng 7</option>
+                            <option>Tháng 8</option>
+                            <option>Tháng 9</option>
+                            <option>Tháng 10</option>
+                            <option>Tháng 11</option>
+                            <option>Tháng 12</option>
+                        </select>
+                    </label>
+                </div>
+                <div class="form-group ml-auto">
+                    <label for="sel2">
+                        <select class="form-control" id="sel2">
+                            <option>Theo tháng</option>
+                            <option>Theo năm</option>
+                        </select>
+                    </label>
+                </div>
+            </div>
+            <hr>
+            <canvas id="myChart"></canvas>
+        </div>
+    </div>
+</div>
+
+<!--footer-->
+<footer class="f-sub">
+    <ul class="f-sub-nav">
+        <li><a href="#">Về chúng tôi</a><span>|</span></li>
+        <li><a href="#">Điều khoản</a><span>|</span></li>
+        <li><a href="#">Chính sách bảo mật</a></li>
+    </ul>
+    <p class="f-sub-copyright">Copyright &copy; 2019 <span>INNO VEH</span> </p>
+</footer>
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<!--char.JS-->
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js"></script>
+<!--javascript-->
+<script src="js/bieudo.js"></script>
+</body>
+</html>

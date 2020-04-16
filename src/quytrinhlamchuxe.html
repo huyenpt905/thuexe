@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <title>Chi tiết hóa đơn</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!--Front-Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css?fbclid=IwAR2RxPg5srJ2_UhPB6BSgr-lvfxz4_AylOeRXhXkqZ9btpjAt7DppQ3Ad8I">
+    <!--style-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!--header-->
+<header>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-md">
+            <!-- Brand -->
+            <a class="navbar-brand" href="trangchu.html"><img class="h-logo" src="images/Logo.png" alt="Logo"></a>
+
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler ml-auto" type="button">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="h-link nav-link" href="#">Giới thiệu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="h-email nav-link" href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><img src="images/bn-vietnam.jpg" alt="VN"></a>
+                    </li>
+                    <li class="nav-item">
+                        <div class="h-user dropdown">
+                            <button class="h-user__btn dropdown-toggle" type="button" data-toggle="dropdown">
+                                <img class="h-user__avt" src="./images/avatar.JPG" alt="avatar">
+                                <span class="h-user__name">Trần Văn Nam</span>
+                            </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="customer.html">Trang cá nhân</a>
+                                <a class="dropdown-item" href="danhsachthuexe.html">Làm nhà xe</a>
+                                <a class="dropdown-item" href="#">Đăng xuất</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<!--quy trình làm chủ nhà xe-->
+<div class="step-owner">
+    <div class="container">
+        <h6 class="text-center font-weight-bold">Bạn muốn làm nhà xe thì thực hiện 3 bước sau đây</h6>
+        <!-- Nav tabs -->
+        <ul class="progressbar nav nav-tabs" role="tablist">
+            <li class="nav-item current">
+                <a class="nav-link" data-toggle="tab" href="#step1">Khai báo thông tin nhà xe</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#step2">Chi tiết xe</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#step3">Chính sách</a>
+            </li>
+        </ul>
+        <!-- Tab panes -->
+        <div class="tab-content mytab-content">
+            <div id="step1" class="container tab-pane active"><br>
+                <div class="form-group row">
+                    <label class="form-control-label col-12" for="tennhaxe">Tên nhà xe
+                        <input class="form-control col-12" type="text" id="tennhaxe">
+                    </label>
+                </div>
+                <div class="form-group row">
+                    <label class="form-control-label col-12" for="hoten">Họ tên
+                        <input class="form-control col-12" type="text" id="hoten">
+                    </label>
+                </div>
+                <div class="form-group row">
+                    <label class="form-control-label col-12" for="taikhoan">Tài khoản
+                        <input class="form-control col-12" type="text" id="taikhoan">
+                    </label>
+                </div>
+                <div>
+                    <div class="form-group row">
+                        <label class="form-control-label col-12" for=pw>Mật khẩu
+                            <input class="form-control col-12" type="text" id="pw">
+                        </label>
+                    </div>
+                    <div class="form-group row">
+                        <label class="form-control-label col-12" for="sdt">Số điện thoại
+                            <input class="form-control col-12" type="text" id="sdt">
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="form-control-label col-12" for="email">Email
+                        <input class="form-control col-12" type="text" id="email">
+                    </label>
+                </div>
+                <div class="form-group row">
+                    <label class="form-control-label col-12" for="dc">Địa chỉ
+                        <input class="form-control col-12" type="text" id="dc">
+                    </label>
+                </div>
+                <div class="form-group row">
+                    <label class="form-control-label col-12">Hình ảnh chứng minh thư</label>
+
+                    <form class="col-md-6" action="">
+                        <p>Mặt trước</p>
+                        <div class="custom-file mb-3">
+                            <input type="file" class="custom-file-input" id="file1" name="filename">
+                            <label class="custom-file-label" for="file1">Choose file</label>
+                        </div>
+                    </form>
+                    <form class="col-md-6" action="">
+                        <p>Mặt sau</p>
+                        <div class="custom-file mb-3">
+                            <input type="file" class="custom-file-input" id="file2" name="filename">
+                            <label class="custom-file-label" for="file2">Choose file</label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div id="step2" class="tab-pane fade">
+                <ul class="nav nav-tabs mynav-tabs">
+                    <li class="mynav-tabs__item active"><a data-toggle="tab" href="#thuexe">Thuê xe</a></li>
+                    <li class="mynav-tabs__item"><a data-toggle="tab" href="#cano">Thuê cano</a></li>
+                </ul>
+                <div class="container step2">
+                    <div class="tab-content">
+                        <div id="thuexe" class="tab-pane fade active">
+                            <div class="form-group row">
+                                <label class="form-control-label col-12" for="tenxe">Tên xe
+                                    <input class="form-control" type="text" id="tenxe">
+                                </label>
+                            </div>
+                            <div class="form-group row">
+                                <label class="form-control-label col-12" for="loaixe">Loại xe
+                                    <input class="form-control" type="text" id="loaixe">
+                                </label>
+                            </div>
+                            <div class="form-group row">
+                                <label class="form-control-label col-12" for="socho">Số chỗ
+                                    <input class="form-control" type="text" id="socho">
+                                </label>
+                            </div>
+                            <div class="form-group row">
+                                <label class="form-control-label col-12" for="soluong">Số lượng
+                                    <input class="form-control" type="text" id="soluong">
+                                </label>
+                            </div>
+                            <div class="form-group row">
+                                <label class="form-control-label col-12" for="giaxe">Giá xe
+                                    <input class="form-control" type="text" id="giaxe">
+                                </label>
+                            </div>
+                            <div class="form-group row">
+                                <label class="form-control-label col-12" for="comment">Mô tả
+                                    <textarea class="form-control" rows="5" id="comment"></textarea>
+                                </label>
+                            </div>
+                            <div class="custom-file mb-3">
+                                <p>Thêm ảnh</p>
+                                <div class="custom-file mb-3">
+                                    <input type="file" class="custom-file-input" id="file3" name="filename">
+                                    <label class="custom-file-label" for="file1">Choose file</label>
+                                </div>
+                            </div>
+                            <!-- .add-new is global-->
+                            <div class="add-new">
+                                <a href="">
+                                    <i class="fa fa-plus" aria-hidden="true"></i>
+                                    Thêm mới
+                                </a>
+                            </div>
+
+                            <hr class="bg-body">
+
+                            <label>
+                                <input type="checkbox" data-toggle="collapse" data-target="#phuphi">
+                                Phụ phí
+                            </label>
+
+                            <div id="phuphi" class="collapse">
+                                <div class="form-group row">
+                                    <label class="form-control-label col-12" for="tenphuphi">Tên phụ phí
+                                        <input class="form-control col-12" type="text" id="tenphuphi">
+                                    </label>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="form-control-label col-12" for="soluong1">Số lượng
+                                        <input class="form-control col-12" type="text" id="soluong1">
+                                    </label>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="form-control-label col-12" for="gia">Giá
+                                        <input class="form-control col-12" type="text" id="gia">
+                                    </label>
+                                </div>
+                                <!-- .add-new is global-->
+                                <div class="add-new">
+                                    <a href="">
+                                        <i class="fa fa-plus" aria-hidden="true"></i>
+                                        Thêm mới
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div id="cano" class="tab-pane fade">
+                            <p>some text</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="step3" class="container tab-pane fade">
+                <h6>Chính sách và điều khoản</h6>
+                <div class="form-group">
+                    <label for="chinhsach">Comment:</label>
+                    <textarea class="form-control" rows="5" id="chinhsach" spellcheck="true" style="z-index: auto; position: relative; line-height: 24px; font-size: 16px; transition: none 0s ease 0s; background: none 0% 0% / auto repeat scroll padding-box padding-box rgb(255, 255, 255);"></textarea>
+                </div>
+                <p>
+                    <i class="fa fa-asterisk" aria-hidden="true"></i>
+                    Có thể bỏ qua bước này
+                </p>
+                <div class="mytab-content__btn">
+                    <button class="btn" type="button">Hoàn thành</button>
+                </div>
+            </div>
+        </div>
+
+<!--        <div>-->
+<!--            <button class="btn" type="button">Tiếp tục</button>-->
+<!--        </div>-->
+    </div>
+</div>
+
+<!--footer-->
+<footer class="f-sub">
+    <ul class="f-sub-nav">
+        <li><a href="#">Về chúng tôi</a><span>|</span></li>
+        <li><a href="#">Điều khoản</a><span>|</span></li>
+        <li><a href="#">Chính sách bảo mật</a></li>
+    </ul>
+    <p class="f-sub-copyright">Copyright &copy; 2019 <span>INNO VEH</span> </p>
+</footer>
+
+
+
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<!--javascript-->
+<script src="js/main.js"></script>
+</body>
+</html>

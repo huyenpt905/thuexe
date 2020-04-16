@@ -1,0 +1,612 @@
+<!doctype html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <title>Trang chủ</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!--Font-Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css?fbclid=IwAR2RxPg5srJ2_UhPB6BSgr-lvfxz4_AylOeRXhXkqZ9btpjAt7DppQ3Ad8I">
+    <!--owl-carousel-->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    
+    <!-- animate -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!--style-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <!--header-->
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-md">
+                <!-- Brand -->
+                <a class="navbar-brand wow fadeInUp" data-wow-delay="0s" data-wow-duration="1.5s" href="trangchu.html"><img class="h-logo" src="images/Logo.png" alt="Logo"></a>
+            <div class="header-menu">
+                <!-- Toggler/collapsibe Button -->
+                <nav class="navbar navbar-light">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                  </button>
+              </nav>
+              <div class="collapse" id="navbarToggleExternalContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="h-link nav-link" href="#">Giới thiệu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class=" nav-link" href="#">Thông báo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><img src="images/bn-vietnam.jpg" alt="VN"></a>
+                    </li>
+                    <li class="nav-item dangnhap">
+                        <a href="" class="h-link nav-link">Đăng kí <span>/</span>Đăng nhập</a>
+
+                    </li>
+                    <!-- sign -->
+                </ul>
+            </div>
+            </div>
+                
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse wow fadeInUp" data-wow-delay="0s" data-wow-duration="1.5s" id="collapsibleNavbar">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="h-link nav-link" href="#">Giới thiệu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="h-email nav-link" href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><img src="images/bn-vietnam.jpg" alt="VN"></a>
+                    </li>
+                    <li class="nav-item dangnhap">
+                        <a href="" class="h-link nav-link">Đăng kí <span>/</span>Đăng nhập</a>
+
+                    </li>
+                    <!-- sign -->
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<!--schedule-->
+<section class="schedule">
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="g-nav">
+             <ul class="nav wow fadeInUp" data-wow-delay="1s" data-wow-duration="1s">
+                 <li class="nav-item">
+                     <a class="nav-link active" href="#">Thuê xe</a>
+                 </li>
+                 <li class="nav-item">
+                     <a class="nav-link disabled" href="#">Thuê cano</a>
+                 </li>
+             </ul>
+         </nav>
+     </div>
+     <div class="schedule__form row wow fadeInUp" data-wow-delay="2s" data-wow-duration="2s">
+        <div class="col-12 col-md-6">
+            <div class="row">
+                <div class="form-group col-12 col-lg-6">
+                    <label class="form-group"> Địa điểm nhận xe
+                        <input class="form-control" type="text" placeholder="Nhập một địa điểm">
+                    </label>
+                </div>
+                <div class="form-group col-6 col-lg-3">
+                    <label> Loại xe
+                        <select name="cars" class="custom-select">
+                            <option value="xemay" selected>Xe máy</option>
+                            <option value="ototulai">Xe ô tô tự lái</option>
+                            <option value="otocolai">Xe ô tô có lái</option>
+                        </select>
+                    </label>
+                </div>
+                <div class="form-group col-6 col-lg-3">
+                    <label>Số chỗ
+                        <select name="cars" class="custom-select">
+                            <option selected>4 - 7</option>
+                            <option value="">12 - 16</option>
+                            <option value="">24 - 29</option>
+                            <option value="">35 - 50</option>
+                        </select>
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-6">
+            <div class="row">
+                <div class="form-group col-6">
+                    <label>Ngày nhận xe
+                        <input class="form-control" max="3000-12-31" min="2000-01-01"
+                        name="" type="date">
+                    </label>
+                </div>
+
+                <div class="form-group col-6">
+                    <label>Ngày trả xe
+                        <input class="form-control" max="3000-12-31" min="2000-01-01"
+                        name="" type="date">
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="schedule__search wow fadeInUp" data-wow-delay="2.5s" data-wow-duration="1s">
+        <a href="danhsachnhaxe.html" class="btn btn-radius btn--main btn--search">Tìm kiếm  <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+    </div>
+    <div class="schedule__intro wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="1s">
+        <h3>Chào mừng bạn đến với trang web thuê xe du lịch và cano INNO VEH</h3>
+        <p>Chỉ cần nhập điểm đến, nhận ngày và trả, website sẽ cung cấp cho người dùng <br>
+            danh sách nhà xe/cano và xe/cano cho thuê được lịc theo bộ lọc là giá cả và đánh giá <br>
+        để khách hàng có thể lựa chọn cho mình nhà xe/cano phù hợp nhất</p>
+    </div>
+</div>
+</section>
+
+<!--Ưu đãi-->
+<section class="section-g">
+    <div class="section-g__wrap container">
+        <h1 class="section-title effect wow fadeInRight" data-wow-delay="0s" data-wow-duration="1.5s"><i></i> Ưu đãi</h1>
+        <!--<div class="row">-->
+            <div class="section-g-carousel owl-carousel owl-loaded wow fadeInLeft" data-wow-delay="0.5s" data-wow-duration="2">
+                <div class="owl-stage-outer">
+                    <div class="owl-stage">
+                        <div class="section-g__item owl-item">
+                            <div class="card">
+                                <div class="card-img-top">
+                                    <a href=""><img src="./images/img-xe.jpg" alt="Card image"></a>
+                                </div>
+                                <div class="card-body">
+                                    <h3 class="card-title"><a href="">Nhà xe Xuân Tùng</a></h3>
+                                    <div class="card__wrap">
+                                       <span class="rating">
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    </span>
+                                    <p class="card-text">Giá: <strong>vnd</strong></p>
+                                </div>
+                            </div>
+                            <div class="card__discount"><span>40%</span></div>
+                        </div>
+                    </div>
+                    <div class="section-g__item owl-item">
+                     <div class="card">
+                        <div class="card-img-top">
+                            <a href=""><img src="./images/img-xe.jpg" alt="Card image"></a>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title"><a href="">Nhà xe Xuân Tùng</a></h3>
+                            <div class="card__wrap">
+                               <span class="rating">
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                            </span>
+                            <p class="card-text">Giá: <strong>vnd</strong></p>
+                        </div>
+                    </div>
+                    <div class="card__discount"><span>40%</span></div>
+                </div>
+            </div>
+            <div class="section-g__item owl-item">
+                <div class="card">
+                    <div class="card-img-top">
+                        <a href=""><img src="./images/img-xe.jpg" alt="Card image"></a>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title"><a href="">Nhà xe Xuân Tùng</a></h3>
+                        <div class="card__wrap">
+                           <span class="rating">
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                        </span>
+                        <p class="card-text">Giá: <strong>vnd</strong></p>
+                    </div>
+                </div>
+                <div class="card__discount"><span>40%</span></div>
+            </div>
+        </div>
+        <div class="section-g__item owl-item">
+            <div class="card">
+                <div class="card-img-top">
+                    <a href=""><img src="./images/img-xe.jpg" alt="Card image"></a>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title"><a href="">Nhà xe Xuân Tùng</a></h3>
+                    <div class="card__wrap">
+                       <span class="rating">
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                    </span>
+                    <p class="card-text">Giá: <strong>vnd</strong></p>
+                </div>
+            </div>
+            <div class="card__discount"><span>40%</span></div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+<!--</div>-->
+</div>
+</section>
+
+<!--Gợi ý cho bạn-->
+<section class="section-g">
+    <div class="section-g__wrap container">
+        <h1 class="section-title effect wow fadeInRight" data-wow-delay="0s" data-wow-duration="1.5s"><i></i> Gợi ý cho bạn</h1>
+        <!--<div class="row">-->
+            <div class="section-g-carousel owl-carousel owl-loaded wow fadeInLeft" data-wow-delay="0.5s" data-wow-duration="2">
+                <div class="owl-stage-outer">
+                    <div class="owl-stage">
+                        <div class="section-g__item owl-item">
+                            <div class="card">
+                                <div class="card-img-top">
+                                    <a href=""><img src="./images/img-xe.jpg" alt="Card image"></a>
+                                </div>
+                                <div class="card-body">
+                                    <h3 class="card-title"><a href="">Nhà xe Xuân Tùng</a></h3>
+                                    <div class="card__wrap">
+                                       <span class="rating">
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    </span>
+                                    <p class="card-text">Giá: <strong>vnd</strong></p>
+                                </div>
+                            </div>
+                            <div class="card__discount"><span>40%</span></div>
+                        </div>
+                    </div>
+                    <div class="section-g__item owl-item">
+                        <div class="card">
+                            <div class="card-img-top">
+                                <a href=""><img src="./images/img-xe.jpg" alt="Card image"></a>
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-title"><a href="">Nhà xe Xuân Tùng</a></h3>
+                                <div class="card__wrap">
+                                   <span class="rating">
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                </span>
+                                <p class="card-text">Giá: <strong>vnd</strong></p>
+                            </div>
+                        </div>
+                        <div class="card__discount"><span>40%</span></div>
+                    </div>
+                </div>
+                <div class="section-g__item owl-item">
+                    <div class="card">
+                        <div class="card-img-top">
+                            <a href=""><img src="./images/img-xe.jpg" alt="Card image"></a>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title"><a href="">Nhà xe Xuân Tùng</a></h3>
+                            <div class="card__wrap">
+                               <span class="rating">
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                            </span>
+                            <p class="card-text">Giá: <strong>vnd</strong></p>
+                        </div>
+                    </div>
+                    <div class="card__discount"><span>40%</span></div>
+                </div>
+            </div>
+            <div class="section-g__item owl-item">
+                <div class="card">
+                    <div class="card-img-top">
+                        <a href=""><img src="./images/img-xe.jpg" alt="Card image"></a>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title"><a href="">Nhà xe Xuân Tùng</a></h3>
+                        <div class="card__wrap">
+                           <span class="rating">
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                        </span>
+                        <p class="card-text">Giá: <strong>vnd</strong></p>
+                    </div>
+                </div>
+                <div class="card__discount"><span>40%</span></div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<!--</div>-->
+</div>
+</section>
+
+<!--Khám phá mới-->
+<section class="section-g">
+    <div class="section-g__wrap container">
+        <h1 class="section-title effect wow fadeInRight" data-wow-delay="0s" data-wow-duration="1.5s"><i></i> Khám phá mới</h1>
+        <!--<div class="row">-->
+            <div class="section-g-carousel owl-carousel owl-loaded wow fadeInLeft" data-wow-delay="0.5s" data-wow-duration="2">
+                <div class="owl-stage-outer">
+                    <div class="owl-stage">
+                        <div class="section-g__item owl-item">
+                            <div class="card">
+                                <div class="card-img-top">
+                                    <a href=""><img src="./images/img-xe.jpg" alt="Card image"></a>
+                                </div>
+                                <div class="card-body">
+                                    <h3 class="card-title"><a href="">Nhà xe Xuân Tùng</a></h3>
+                                    <div class="card__wrap">
+                                       <span class="rating">
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    </span>
+                                    <p class="card-text">Giá: <strong>vnd</strong></p>
+                                </div>
+                            </div>
+                            <div class="card__discount"><span>40%</span></div>
+                        </div>
+                    </div>
+                    <div class="section-g__item owl-item">
+                        <div class="card">
+                            <div class="card-img-top">
+                                <a href=""><img src="./images/img-xe.jpg" alt="Card image"></a>
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-title"><a href="">Nhà xe Xuân Tùng</a></h3>
+                                <div class="card__wrap">
+                                   <span class="rating">
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                </span>
+                                <p class="card-text">Giá: <strong>vnd</strong></p>
+                            </div>
+                        </div>
+                        <div class="card__discount"><span>40%</span></div>
+                    </div>
+                </div>
+                <div class="section-g__item owl-item">
+                    <div class="card">
+                        <div class="card-img-top">
+                            <a href=""><img src="./images/img-xe.jpg" alt="Card image"></a>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title"><a href="">Nhà xe Xuân Tùng</a></h3>
+                            <div class="card__wrap">
+                               <span class="rating">
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                            </span>
+                            <p class="card-text">Giá: <strong>vnd</strong></p>
+                        </div>
+                    </div>
+                    <div class="card__discount"><span>40%</span></div>
+                </div>
+            </div>
+            <div class="section-g__item owl-item">
+                <div class="card">
+                    <div class="card-img-top">
+                        <a href=""><img src="./images/img-xe.jpg" alt="Card image"></a>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title"><a href="">Nhà xe Xuân Tùng</a></h3>
+                        <div class="card__wrap">
+                           <span class="rating">
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                        </span>
+                        <p class="card-text">Giá: <strong>vnd</strong></p>
+                    </div>
+                </div>
+                <div class="card__discount"><span>40%</span></div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<!--</div>-->
+</div>
+</section>
+
+<!--intro-->
+<section class="intro">
+ <div class="container">
+     <div class="row">
+         <div class="intro__item col-md-6 col-lg-3  wow fadeInUp" data-wow-delay="0s" data-wow-duration="1.5s">
+             <img src="./images/icon1.png" alt="">
+             <h4>INNO VEH là gì?</h4>
+             <p>
+                 Chào mừng bạn đến với website INNOHN VEH, nơi bạn có thể tìm kiếm và thuê xe/đặt vé cano tại các địa điểm du lịch. Giúp bạn dễ dàng và chủ động hơn trong các chuyến đi. Mang lại cho bạn những trải nghiệm thú vị.
+             </p>
+         </div>
+         <div class="intro__item col-md-6 col-lg-3  wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="1.5s">
+             <img src="./images/icon2.png" alt="">
+             <h4>Tìm kiếm nhanh</h4>
+             <p>
+                 Bạn chỉ cần nhập vào khung tìm kiếm, kết quả sẽ hiển thị theo nhiều bộ lọc, giúp bạn tìm được nhà xe, nhà chủ cano phù hợp và đặt thuê xe/đặt vé một cách nhanh nhất.
+             </p>
+         </div>
+         <div class="intro__item col-md-6 col-lg-3   wow fadeInUp" data-wow-delay="1s" data-wow-duration="1.5s">
+             <img src="./images/icon3.png" alt="">
+             <h4>Tin cậy tuyệt đối</h4>
+             <p>
+                 Mọi thông tin về các phương tiện, nhà chủ xe, cano đều đưcọ kiểm duyệt, và quyền lợi khách hàng của bạn được đảm bảo tuyệt đối.
+             </p>
+         </div>
+         <div class="intro__item col-md-6 col-lg-3  wow fadeInUp" data-wow-delay="1.5s" data-wow-duration="1.5s">
+             <img src="./images/icon4.png" alt="">
+             <h4>Giá cả hợp lý</h4>
+             <p>
+                 Với nhiều mức giá tương đương với chất lượng các loại phương tiện, bên cạnh đó luôn có các chương trình ưu đãi từ các nhà xe/cano. Chúng tôi sẽ giúp bạn có thể đi rẻ nhất có thể.
+             </p>
+         </div>
+     </div>
+ </div>
+</section>
+
+<!--footer-->
+<footer class="footer">
+    <p class="f-slogan">Chúng tôi sẽ giúp bạn có chuyến đi rẻ nhất!</p>
+    <div class="f-wrap">
+        <ul class="f-nav">
+            <li><a href="#">Về chúng tôi</a><span>|</span></li>
+            <li><a href="#">Điều khoản</a><span>|</span></li>
+            <li><a href="#">Chính sách bảo mật</a></li>
+        </ul>
+        <p class="f-copyright">Copyright &copy; 2019 <span>INNO VEH</span> </p>
+    </div>
+</footer>
+<!-- backtotop -->
+<a class="back-to-top" data-original-title="" title="" style="display: inline;"><i class="fa fa-angle-up"></i></a>
+<!--chat-->
+
+<!-- <div class="chat">
+    <div class="chat__icon"><i class="far fa-comments"></i></div>
+    <div class="chat__content">
+        <div class="row">
+            <div class="col-md-3">LOGO</div>
+            <div class="col-md-4">Tên AGENCY</div>
+        </div>
+        <form action="#" method="post">
+            <div class="input-group">
+                <label for="textarea">Nội dung</label>
+                <textarea cols="40" rows="8" name="textarea" id="textarea"></textarea>
+            </div>
+            <div class="input-group">
+                <input type="submit" value="Gửi" />
+            </div>
+        </form>
+    </div>
+</div> -->
+<!-- Đăng nhập đăng kí -->
+<div class="form-sign">
+    <ul class="nav nav-tabs">
+        <li class="active"><a data-toggle="tab" href="#dangnhap">Đăng nhập</a></li>
+        <li><a data-toggle="tab" href="#dangky">Đăng ký</a></li>
+    </ul>
+
+    <div class="tab-content">
+        <div id="dangnhap" class="tab-pane fade in active">
+          <h3>Vui lòng đăng nhập để tiếp tục</h3>
+          <form action="">
+            <div class="input-group">
+                <label>Tên đăng nhập</label>
+                <input type="text" name="tendangnhap">
+            </div>
+            <div class="input-group">
+                <label>Mật khẩu</label>
+                <input type="password" name="matkhau">
+            </div>
+            <div class="input-group">
+                <input type="submit" value="Đăng nhập">
+            </div>
+        </form>
+        <div class="form-sign-social">
+            <span><i class="fab fa-facebook-square"></i></span><span><i class="fab fa-google-plus-square"></i></span>
+        </div>
+        <div class="form-sign-forgot"><a href="">Quên mật khẩu</a></div>
+    </div> <!-- dangnhap -->
+    <div id="dangky" class="tab-pane fade">
+        <h3>Vui lòng đăng ký để tiếp tục</h3>
+        <form action="">
+            <div class="input-group">
+                <label>Tên đăng nhập</label>
+                <input type="text" name="tendangky">
+            </div>
+            <div class="input-group">
+                <label>Mật khẩu</label>
+                <input type="password" name="matkhau">
+            </div>
+            <div class="input-group">
+                <label>Họ tên</label>
+                <input type="password" name="hoten">
+            </div>
+            <div class="input-group">
+                <label>Ngày sinh</label>
+                <input type="date" name="ngaysinh">
+            </div>
+            <div class="input-group">
+                <label>Giới tính</label>
+                <input type="checkbox" name="gioitinh-nu" value="Nữ">Nữ<input type="checkbox" name="gioitinh-nam" value="Nam">Nam
+            </div>
+            <div class="input-group">
+                <label>Số điện thoại</label>
+                <input type="tel" name="sodienthoai">
+            </div>
+            <div class="input-group">
+                <label>Địa chỉ</label>
+                <input type="text" name="diachi">
+            </div>
+            <div class="input-group">
+                <label>Email</label>
+                <input type="email" name="email">
+            </div>
+            <div class="input-group">
+                <input type="submit" value="Đăng ký">
+            </div>
+        </form>
+        <div class="form-sign-social">
+            <span><i class="fa fa-facebook-official" aria-hidden="true"></i></span><span><i class="fa fa-twitter" aria-hidden="true"></i></span>
+        </div>
+    </div><!--  dangki -->
+</div>
+<div class="form-sign-close"><i class="fa fa-times-circle" aria-hidden="true"></i></div>
+</div> <!-- sign -->
+
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<!--owl carousel js-->
+<script src="js/owl.carousel.min.js"></script>
+<!-- wow-js -->
+<script src="js/wow.min.js"></script>
+<!--javascript-->
+<script src="js/main.js"></script>
+
+</body>
+</html>

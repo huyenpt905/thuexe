@@ -1,0 +1,416 @@
+<!doctype html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <title>Danh sách thuê xe</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- pgwSlider -->
+    <link rel="stylesheet" type="text/css" href="css/pgwslider.min.css">
+    <!--Font-Awesome 4-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css?fbclid=IwAR2RxPg5srJ2_UhPB6BSgr-lvfxz4_AylOeRXhXkqZ9btpjAt7DppQ3Ad8I">
+    <!--owl-carousel-->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <!--style-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!--header-->
+<header>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-md">
+            <!-- Brand -->
+            <a class="navbar-brand" href="trangchu.html"><img class="h-logo" src="images/Logo.png" alt="Logo"></a>
+
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler ml-auto" type="button">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="h-link nav-link" href="#">Giới thiệu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="h-email nav-link" href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><img src="images/bn-vietnam.jpg" alt="VN"></a>
+                    </li>
+                    <li class="nav-item">
+                        <div class="h-user dropdown">
+                            <button class="h-user__btn dropdown-toggle" type="button" data-toggle="dropdown">
+                                <img class="h-user__avt" src="./images/avatar.JPG" alt="avatar">
+                                <span class="h-user__name">Trần Văn Nam</span>
+                            </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="customer.html">Trang cá nhân</a>
+                                <a class="dropdown-item" href="quytrinhlamchuxe.html">Làm nhà xe</a>
+                                <a class="dropdown-item" href="#">Đăng xuất</a>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- sign -->
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>
+<div class="container">
+    <nav class="owner-nav">
+        <!-- Links -->
+        <ul class="owner-nav__list">
+            <li class="owner-nav__item">
+                <a class="owner-nav__link active" href="danhsachthuexe.html">
+                    <img src="images/ds.png" alt="" class="img-responsive">
+                    <span class="owner-nav__txt">Danh sách thuê</span>
+                </a>
+                <!--<span class="owner-nav__line">|</span>-->
+            </li>
+            <li class="owner-nav__item">
+                <a class="owner-nav__link" href="lich.html">
+                    <img src="images/lichb.png" alt="" class="img-responsive">
+                    <span class="owner-nav__txt">Lịch</span>
+                </a>
+                <!--<span class="owner-nav__line">|</span>-->
+            </li>
+            <li class="owner-nav__item">
+                <a class="owner-nav__link" href="danhgia.html">
+                    <img src="images/danhgia.png" alt="" class="img-responsive">
+                    <span class="owner-nav__txt">Đánh giá </span>
+                </a>
+                <!--<span class="owner-nav__line">|</span>-->
+            </li>
+            <li class="owner-nav__item">
+                <a class="owner-nav__link" href="bieudo.html">
+                    <img src="images/bd.png" alt="" class="img-responsive">
+                    <span class="owner-nav__txt">Biểu đồ</span>
+                </a>
+                <!--<span class="owner-nav__line">|</span>-->
+            </li>
+            <li class="owner-nav__item">
+                <a class="owner-nav__link" href="khuyenmai.html">
+                    <img src="images/km.png" alt="" class="img-responsive">
+                    <span class="owner-nav__txt">Khuyến mãi</span>
+                </a>
+                <!--<span class="owner-nav__line">|</span>-->
+            </li>
+            <li class="owner-nav__item">
+                <a class="owner-nav__link" href="thongtinnhaxe.html">
+                    <img src="images/thongtinb.png" alt="" class="img-responsive">
+                    <span class="owner-nav__txt">Thông tin nhà xe</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</div>
+<!--danh sach thue xe-->
+<section class="list-booked">
+    <div class="owner-tab-wrap container-fluid">
+      <div class="container">
+          <ul class="owner-tab nav nav-tabs">
+              <li class="owner-tab__item owner-tab__item--active active"><a data-toggle="tab" href="#chuanhanxe">Chưa nhận xe</a></li>
+              <li class="owner-tab__item"><a data-toggle="tab" href="#nhanxe">Đã nhận xe</a></li>
+              <li class="owner-tab__item"><a data-toggle="tab" href="#traxe">Đã trả xe</a></li>
+          </ul>
+      </div>
+    </div>
+    <div class="container">
+        <div class="tab-content">
+            <div id="chuanhanxe" class="tab-pane active">
+                <div class="row">
+                    <h6 class="col-8">Danh sách sắp xếp theo ngày đặt</h6>
+                    <label class="col-4">
+                        <select name="cars" class="custom-select mb-3">
+                            <option selected>Ngày đặt xe</option>
+                            <option value="">Ngày nhận xe</option>
+                        </select>
+                    </label>
+                </div>
+                <!-- Tables begin -->
+                <!--scss: generic-->
+                <table class="table">
+                    <thead class="table__head">
+                    <tr class="table__row">
+                        <th class="table__cell table__cell--head" scope="col">Tên khách hàng</th>
+                        <th class="table__cell table__cell--head" scope="col">Ngày nhận - Ngày trả</th>
+                        <th class="table__cell table__cell--head" scope="col">Mã đặt</th>
+                        <th class="table__cell table__cell--head" scope="col">Loại xe</th>
+                        <th class="table__cell table__cell--head" scope="col">Số lượng</th>
+                        <th class="table__cell table__cell--head" scope="col">Tổng tiền</th>
+                        <th class="table__cell table__cell--head" scope="col"></th>
+                    </tr>
+                    </thead>
+                    <tbody class="table__body">
+
+                    <tr class="table__row">
+                        <th class="table__cell table__cell--head table__cell--spanned" colspan="7">
+                            Ngày đặt: <span>14/03/2019</span>
+                        </th>
+                    </tr>
+
+                    <tr class="table__row">
+                        <th class="table__cell table__cell--head" scope="row" data-title="Tên khách hàng">
+                            Trần Thị An
+                        </th>
+                        <td class="table__cell" data-title="Ngày nhận - Ngày trả">
+                            <span>T6 15/03/2019</span> - <span>T3 19/03/2019</span>
+                        </td>
+                        <td class="table__cell" data-title="Mã đặt">
+                            #12345
+                        </td>
+                        <td class="table__cell" data-title="Loại xe">
+                            Xe 4 chỗ
+                        </td>
+                        <td class="table__cell" data-title="Số lượng">
+                            2
+                        </td>
+                        <td class="table__cell" data-title="Tổng tiền">
+                            2.000.000 VND
+                        </td>
+                        <td class="table__cell">
+                            <a class="btn-detail dinhvi" href="">Xem định vị</a>
+                        </td>
+                    </tr>
+                    <tr class="table__row">
+                        <th class="table__cell table__cell--head" scope="row" data-title="Tên khách hàng">
+                            Trần Thị An
+                        </th>
+                        <td class="table__cell" data-title="Ngày nhận - Ngày trả">
+                            <span>T6 15/03/2019</span> - <span>T3 19/03/2019</span>
+                        </td>
+                        <td class="table__cell" data-title="Mã đặt">
+                            #12345
+                        </td>
+                        <td class="table__cell" data-title="Loại xe">
+                            Xe 4 chỗ
+                        </td>
+                        <td class="table__cell" data-title="Số lượng">
+                            2
+                        </td>
+                        <td class="table__cell" data-title="Tổng tiền">
+                            2.000.000 VND
+                        </td>
+                        <td class="table__cell">
+                            <a class="btn-detail dinhvi" href="">Xem định vị</a>
+                        </td>
+                    </tr>
+                    <tr class="table__row">
+                        <th class="table__cell table__cell--head" scope="row" data-title="Tên khách hàng">
+                            Trần Thị An
+                        </th>
+                        <td class="table__cell" data-title="Ngày nhận - Ngày trả">
+                            <span>T6 15/03/2019</span> - <span>T3 19/03/2019</span>
+                        </td>
+                        <td class="table__cell" data-title="Mã đặt">
+                            #12345
+                        </td>
+                        <td class="table__cell" data-title="Loại xe">
+                            Xe 4 chỗ
+                        </td>
+                        <td class="table__cell" data-title="Số lượng">
+                            2
+                        </td>
+                        <td class="table__cell" data-title="Tổng tiền">
+                            2.000.000 VND
+                        </td>
+                        <td class="table__cell">
+                            <a class="btn-detail dinhvi" href="">Xem định vị</a>
+                        </td>
+                    </tr>
+                    <tr class="table__row">
+                        <th class="table__cell table__cell--head" scope="row" data-title="Tên khách hàng">
+                            Trần Thị An
+                        </th>
+                        <td class="table__cell" data-title="Ngày nhận - Ngày trả">
+                            <span>T6 15/03/2019</span> - <span>T3 19/03/2019</span>
+                        </td>
+                        <td class="table__cell" data-title="Mã đặt">
+                            #12345
+                        </td>
+                        <td class="table__cell" data-title="Loại xe">
+                            Xe 4 chỗ
+                        </td>
+                        <td class="table__cell" data-title="Số lượng">
+                            2
+                        </td>
+                        <td class="table__cell" data-title="Tổng tiền">
+                            2.000.000 VND
+                        </td>
+                        <td class="table__cell">
+                            <a class="btn-detail dinhvi" href="">Xem định vị</a>
+                        </td>
+                    </tr>
+                    <tr class="table__row">
+                        <th class="table__cell table__cell--head" scope="row" data-title="Tên khách hàng">
+                            Trần Thị An
+                        </th>
+                        <td class="table__cell" data-title="Ngày nhận - Ngày trả">
+                            <span>T6 15/03/2019</span> - <span>T3 19/03/2019</span>
+                        </td>
+                        <td class="table__cell" data-title="Mã đặt">
+                            #12345
+                        </td>
+                        <td class="table__cell" data-title="Loại xe">
+                            Xe 4 chỗ
+                        </td>
+                        <td class="table__cell" data-title="Số lượng">
+                            2
+                        </td>
+                        <td class="table__cell" data-title="Tổng tiền">
+                            2.000.000 VND
+                        </td>
+                        <td class="table__cell">
+                            <a class="btn-detail dinhvi" href="">Xem định vị</a>
+                        </td>
+                    </tr>
+
+                    <tr class="table__row">
+                        <th class="table__cell table__cell--head table__cell--spanned" colspan="7">
+                            Ngày đặt: <span>13/03/2019</span>
+                        </th>
+                    </tr>
+
+                    <tr class="table__row">
+                        <th class="table__cell table__cell--head" scope="row" data-title="Tên khách hàng">
+                            Trần Thị An
+                        </th>
+                        <td class="table__cell" data-title="Ngày nhận - Ngày trả">
+                            <span>T6 15/03/2019</span> - <span>T3 19/03/2019</span>
+                        </td>
+                        <td class="table__cell" data-title="Mã đặt">
+                            #12345
+                        </td>
+                        <td class="table__cell" data-title="Loại xe">
+                            Xe 4 chỗ
+                        </td>
+                        <td class="table__cell" data-title="Số lượng">
+                            2
+                        </td>
+                        <td class="table__cell" data-title="Tổng tiền">
+                            2.000.000 VND
+                        </td>
+                        <td class="table__cell">
+                           <a class="btn-detail dinhvi" href="">Xem định vị</a>
+                        </td>
+                    </tr>
+                    <tr class="table__row">
+                        <th class="table__cell table__cell--head" scope="row" data-title="Tên khách hàng">
+                            Trần Thị An
+                        </th>
+                        <td class="table__cell" data-title="Ngày nhận - Ngày trả">
+                            <span>T6 15/03/2019</span> - <span>T3 19/03/2019</span>
+                        </td>
+                        <td class="table__cell" data-title="Mã đặt">
+                            #12345
+                        </td>
+                        <td class="table__cell" data-title="Loại xe">
+                            Xe 4 chỗ
+                        </td>
+                        <td class="table__cell" data-title="Số lượng">
+                            2
+                        </td>
+                        <td class="table__cell" data-title="Tổng tiền">
+                            2.000.000 VND
+                        </td>
+                        <td class="table__cell">
+                            <a class="btn-detail dinhvi" href="">Xem định vị</a>
+                        </td>
+                    </tr>
+                    <tr class="table__row">
+                        <th class="table__cell table__cell--head" scope="row" data-title="Tên khách hàng">
+                            Trần Thị An
+                        </th>
+                        <td class="table__cell" data-title="Ngày nhận - Ngày trả">
+                            <span>T6 15/03/2019</span> - <span>T3 19/03/2019</span>
+                        </td>
+                        <td class="table__cell" data-title="Mã đặt">
+                            #12345
+                        </td>
+                        <td class="table__cell" data-title="Loại xe">
+                            Xe 4 chỗ
+                        </td>
+                        <td class="table__cell" data-title="Số lượng">
+                            2
+                        </td>
+                        <td class="table__cell" data-title="Tổng tiền">
+                            2.000.000 VND
+                        </td>
+                        <td class="table__cell">
+                            <a class="btn-detail dinhvi" href="">Xem định vị</a>
+                        </td>
+                    </tr>
+                    <tr class="table__row">
+                        <th class="table__cell table__cell--head" scope="row" data-title="Tên khách hàng">
+                            Trần Thị An
+                        </th>
+                        <td class="table__cell" data-title="Ngày nhận - Ngày trả">
+                            <span>T6 15/03/2019</span> - <span>T3 19/03/2019</span>
+                        </td>
+                        <td class="table__cell" data-title="Mã đặt">
+                            #12345
+                        </td>
+                        <td class="table__cell" data-title="Loại xe">
+                            Xe 4 chỗ
+                        </td>
+                        <td class="table__cell" data-title="Số lượng">
+                            2
+                        </td>
+                        <td class="table__cell" data-title="Tổng tiền">
+                            2.000.000 VND
+                        </td>
+                        <td class="table__cell">
+                            <a class="btn-detail dinhvi" href="">Xem định vị</a>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                <!--end-table-->
+            </div>
+            <div id="nhanxe" class="tab-pane fade">
+            </div>
+            <div id="traxe" class="tab-pane fade">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--footer-->
+<footer class="f-sub">
+    <ul class="f-sub-nav">
+        <li><a href="#">Về chúng tôi</a><span>|</span></li>
+        <li><a href="#">Điều khoản</a><span>|</span></li>
+        <li><a href="#">Chính sách bảo mật</a></li>
+    </ul>
+    <p class="f-sub-copyright">Copyright &copy; 2019 <span>INNO VEH</span> </p>
+</footer>
+
+<div class="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d119213.26008557116!2d105.76475713124321!3d20.976020360536133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135acce762c2bb9%3A0xbb64e14683ccd786!2zSOG7jWMgdmnhu4duIEPDtG5nIG5naOG7hyBCxrB1IGNow61uaCBWaeG7hW4gdGjDtG5nIC0gUFRJVA!5e0!3m2!1svi!2s!4v1560237762922!5m2!1svi!2s" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    <i class="fa fa-window-close" aria-hidden="true"></i>
+
+</div>
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<!--owl carousel js-->
+<script src="js/owl.carousel.min.js"></script>
+<!-- pgwSlider -->
+<script type="text/javascript" src="js/pgwslider.min.js"></script>
+<!--javascript-->
+<script src="js/main.js"></script>
+</body>
+</html>

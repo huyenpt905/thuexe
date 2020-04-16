@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <title>Danh sách nhà xe</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!--Front-Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css?fbclid=IwAR2RxPg5srJ2_UhPB6BSgr-lvfxz4_AylOeRXhXkqZ9btpjAt7DppQ3Ad8I">
+    <!--owl-carousel-->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <!--style-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<!--header-->
+<header>
+    <!--header-->
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-md">
+            <!-- Brand -->
+            <a class="navbar-brand" href="trangchu.html"><img class="h-logo" src="images/Logo.png" alt="Logo"></a>
+
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler ml-auto" type="button">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="h-link nav-link" href="#">Giới thiệu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="h-email nav-link" href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><img src="images/bn-vietnam.jpg" alt="VN"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="h-link nav-link">Đăng kí <span>/</span>Đăng nhập</a>
+                    </li>
+                    <!-- sign -->
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<!--g-nav-->
+<nav class="g-nav">
+    <ul class="nav">
+        <li class="nav-item">
+            <a class="nav-link active" href="#">Thuê xe</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link disabled c-main" href="#">Thuê cano</a>
+        </li>
+    </ul>
+</nav>
+
+<!--info-search-->
+<section class="info">
+    <div class="container">
+        <div class="row">
+            <div class="info__left col-6">
+                <p class="info__txt">Hà Nội</p>
+                <p class="info__txt">Xe ô tô - Tự lái</p>
+                <p class="info__txt">4 - 7 chỗ ngồi</p>
+            </div>
+
+            <div class="info__right col-6">
+                <label class="info__date">
+                    <input class="form-control" type="date">
+                </label>
+                <label class="info__date">
+                    <input class="form-control" type="date">
+                </label>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!--show-search-->
+<section class="show-search">
+    <div class="container">
+        <div class="show-search__top row">
+            <div class="col-6">
+                <button class="btn-mapview"><span class="icon-map"></span>Map view</button>
+                <span>10 kết quả tìm kiếm</span>
+            </div>
+            <div class="col-6">
+                <form>
+                    <label>Bộ lọc
+                        <select name="filter" class="custom-select">
+                            <option selected>Đánh giá</option>
+                            <option value="">Giá cả</option>
+                            <option value="">Hot deal</option>
+                        </select>
+                    </label>
+                </form>
+            </div>
+        </div>
+
+        <div class="owner">
+            <div class="owner__item">
+                <div class="row">
+                   <div class="col-md-12 col-lg-4">
+                       <div class="owner__img">
+                           <img src="./images/img-xe.jpg" alt="xe">
+                       </div>
+                   </div>
+                    <div class="owner__info col-md-8 col-lg-5">
+                        <p class="font-weight-bold">Nhà xe: Đức Phúc</p>
+                        <p><span class="font-weight-bold">Địa chỉ:</span> Số 21, Nguyễn Văn Trỗi, Hà Đông, Hà Nội</p>
+                        <p><span class="font-weight-bold">Giá:</span>Giá: Khoảng từ 1.000.000đ - 2.000.000đ</p>
+                        <p><span class="font-weight-bold">Số xe có sẵn:</span> 3 xe</p>
+                    </div>
+                    <div class="owner__info owner__info--left col-md-4 col-lg-3">
+                        <div class="owner__rating g-rating">
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <p>10 người đánh giá</p>
+                        </div>
+                        <div class="owner__btn">
+                            <a href="chitietnhaxe.html">Xem chi tiết</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="owner">
+            <div class="owner__item">
+                <div class="row">
+                    <div class="col-md-12 col-lg-4">
+                        <div class="owner__img">
+                            <img src="./images/img-xe.jpg" alt="xe">
+                        </div>
+                    </div>
+                    <div class="owner__info col-md-8 col-lg-5">
+                        <p class="font-weight-bold">Nhà xe: Đức Phúc</p>
+                        <p><span class="font-weight-bold">Địa chỉ:</span> Số 21, Nguyễn Văn Trỗi, Hà Đông, Hà Nội</p>
+                        <p><span class="font-weight-bold">Giá:</span>Giá: Khoảng từ 1.000.000đ - 2.000.000đ</p>
+                        <p><span class="font-weight-bold">Số xe có sẵn:</span> 3 xe</p>
+                    </div>
+                    <div class="owner__info owner__info--left col-md-4 col-lg-3">
+                        <div class="owner__rating g-rating">
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <p>10 người đánh giá</p>
+                        </div>
+                        <div class="owner__btn">
+                            <a href="chitietnhaxe.html">Xem chi tiết</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="owner">
+            <div class="owner__item">
+                <div class="row">
+                    <div class="col-md-12 col-lg-4">
+                        <div class="owner__img">
+                            <img src="./images/img-xe.jpg" alt="xe">
+                        </div>
+                    </div>
+                    <div class="owner__info col-md-8 col-lg-5">
+                        <p class="font-weight-bold">Nhà xe: Đức Phúc</p>
+                        <p><span class="font-weight-bold">Địa chỉ:</span> Số 21, Nguyễn Văn Trỗi, Hà Đông, Hà Nội</p>
+                        <p><span class="font-weight-bold">Giá:</span>Giá: Khoảng từ 1.000.000đ - 2.000.000đ</p>
+                        <p><span class="font-weight-bold">Số xe có sẵn:</span> 3 xe</p>
+                    </div>
+                    <div class="owner__info owner__info--left col-md-4 col-lg-3">
+                        <div class="owner__rating g-rating">
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <p>10 người đánh giá</p>
+                        </div>
+                        <div class="owner__btn">
+                            <a href="chitietnhaxe.html">Xem chi tiết</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--footer-->
+<footer class="f-sub">
+    <ul class="f-sub-nav">
+        <li><a href="#">Về chúng tôi</a><span>|</span></li>
+        <li><a href="#">Điều khoản</a><span>|</span></li>
+        <li><a href="#">Chính sách bảo mật</a></li>
+    </ul>
+    <p class="f-sub-copyright">Copyright &copy; 2019 <span>INNO VEH</span> </p>
+</footer>
+
+
+
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<!--owl carousel js-->
+<script src="js/owl.carousel.min.js"></script>
+<!--javascript-->
+<script src="js/main.js"></script>
+</body>
+</html>

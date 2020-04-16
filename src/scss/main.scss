@@ -1,0 +1,1432 @@
+/*
+==========================================
+import file
+==========================================
+*/
+@import "variables";
+@import "mixin";
+@import "generic";
+
+
+/*=====================TRANG CHỦ trangchu.html========================*/
+
+/*
+schedule - trang chu
+*/
+body{font-size: 0.9rem}
+header.header-fix {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 9999;
+    background: #fff;
+    transition: 0.5s ease;
+}
+header.header-fix .h-logo {
+    width: 80%;
+    transition: 0.4s ease;
+}
+.schedule {
+  background-color: #008ca8;
+  padding-bottom: 1rem;
+  @include respond-to(break-md) {
+    background-image:  linear-gradient(
+                    rgba(97, 205, 239, 0.26),
+                    rgba(96, 205, 239, 0.02)
+    ), url("../images/bg-header.jpg");
+    -webkit-background-size: cover;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 600px;
+    padding-bottom: 0;
+    position: relative;
+  }
+
+  &__form {
+    @include respond-to(break-md) {
+      padding-top: 2rem;
+      margin: 0 auto;
+    }
+    label {
+      color: #000;
+      font-size: 0.875rem;
+      width: 100%;
+      input {
+        display: block;
+      }
+    }
+  }
+
+  &__search {
+    display: block;
+    @include respond-to(break-sm) {
+        width: 35%;
+        margin-left: auto;
+    }
+    @include respond-to(break-md) {
+      width: 25%;
+      margin-top: 30px;
+    }
+    .btn--search {
+      font-weight: bold;
+      font-size: 1.25rem;
+    }
+  }
+
+  &__intro {
+    display: none;
+    position: absolute;
+    bottom:5%;
+    right: 10%;
+    @include respond-to(break-md) {
+      display: block;
+
+    }
+    h3, p {
+      color: #fff;
+    }
+    h3 {
+      font-size: 1.2rem;
+    }
+    p {
+      opacity: 0.8;
+      font-size: 0.875rem;
+    }
+
+  }
+}
+.header-menu{
+  position: relative;
+  #navbarToggleExternalContent{
+    position: absolute;
+    width: 280px;
+    right: 0;
+    background: #fff;
+    z-index: 999;
+    padding: 10px;
+    border: 1px solid #ece9e9;
+  }
+}
+/*
+discount -trang chu
+*/
+
+.section-g {
+  background-color: $bg-body;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  &__wrap {
+    background-color: #fff;
+   
+    @include respond-to(break-md) {
+      padding: 2rem 5rem;
+    }
+    .section-title{
+      font-size: 20px;
+      line-height: 32px;
+    }
+    .card-body{
+      padding:10px;
+      text-align: center;
+      .card-title {
+        margin-bottom: 5px;
+            a{
+            font-size: 20px;
+          }
+        }
+    }
+  }
+  &__item {
+    .card {
+       @include box-shadow;
+      //border: none;
+      margin: 10px;
+      //border-radius: 10px;
+      background: #fff;
+      overflow: hidden;
+      position: relative;
+      -webkit-transition: $transition;
+      -moz-transition: $transition;
+      -ms-transition: $transition;
+      -o-transition: $transition;
+      transition: $transition;
+      .card-img-top{
+        overflow: hidden;
+      }
+      &:hover{
+        box-shadow: -1px 5px 11px 0px rgba(65, 62, 102, 0.13);
+      }
+      img{
+        transition: 0.4s ease;
+        overflow: hidden;
+      }
+      &:hover img {
+        @include hover-scale(1.1);
+      }
+     &__discount {
+       position: absolute;
+       top: 0;
+       width: 100%;
+       height: 40%;
+       background-color: $c-main-rgba;
+       span {
+         position: absolute;
+         bottom: 0;
+         left: 40%;
+         font-size: 2rem;
+         color: #fff;
+         display: block;
+       }
+     }
+    }
+    .card-title{
+      a{
+        font-size: 1.35rem;
+      }
+    }
+    &:hover .card-title{
+          a{
+            color: #ef9f08;
+        }
+      } 
+  }
+  &-carousel{
+    .owl-nav{
+      button{
+        position: absolute;
+        top: 38%;
+        &.owl-next{
+          left:-23px;
+        }
+        &.owl-prev{
+          right: -23px;
+        }
+        i{
+            font-size: 32px;
+            color: #61cdef;
+        }
+      }
+    }
+    
+  }
+}
+.effect i:before, .effect i:after { content: ''; border-radius: 100%; position: absolute; margin: auto; top: 0; right: 0; bottom: 0; left: 0; }
+.effect i:before { width: 100%; height: 100%; background: #61cdef; opacity: 0.2; -webkit-animation: zoom-jsx-651806982 1s ease-out infinite; animation: zoom-jsx-651806982 1s ease-out infinite; }
+.effect i:after { width: 10px; height: 10px; background: #61cdef; -webkit-animation: zoom-jsx-651806982 1s ease-in 0.05s infinite; animation: zoom-jsx-651806982 1s ease-in 0.05s infinite; }
+.effect i { width: 30px; height: 30px; position: relative; display: inline-block; float: left; margin-right: 10px; }
+@-webkit-keyframes zoom-jsx-651806982 {
+    000% { -webkit-transform: scale(1); -ms-transform: scale(1); transform: scale(1); }
+    050% { -webkit-transform: scale(0.75); -ms-transform: scale(0.75); transform: scale(0.75); }
+    100% { -webkit-transform: scale(1); -ms-transform: scale(1); transform: scale(1); }
+}
+@keyframes zoom-jsx-651806982 {
+    000% { -webkit-transform: scale(1); -ms-transform: scale(1); transform: scale(1); }
+    050% { -webkit-transform: scale(0.75); -ms-transform: scale(0.75); transform: scale(0.75); }
+    100% { -webkit-transform: scale(1); -ms-transform: scale(1); transform: scale(1); }
+}
+/*
+intro - trang chu
+*/
+.intro {
+  padding: 3rem 0 0;
+  &__item {
+    text-align: center;
+    margin-bottom: 40px;
+    img {
+      display: block;
+      width: 100px;
+      height: 100px;
+      margin: 0 auto;
+    }
+    h4 {
+      color: $c-main;
+      margin: 1rem 0;
+      font-size: 18px;
+    }
+    p {
+      padding: 0 1rem;
+    }
+
+  }
+}
+
+/*=====================END--TRANG CHỦ trangchu.html========================*/
+
+/*===================== danhsachnhaxe.html ========================*/
+//.infp --- thong tin tim kiem
+.info {
+ 
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  &__txt {
+    margin-bottom: 0;
+  }
+
+  &__left {
+    position: relative;
+    padding-left: 60px;
+    &::before {
+      content: '';
+      position: absolute;
+      background-image: url(../images/icon-search.svg);
+      background-repeat: no-repeat;
+      background-position: center center;
+      -webkit-background-size: 80%;
+      background-size: 80%;
+      width: 35px;
+      height: 35px;
+      left: 1rem;
+      top: 20px;
+      border: 1px solid;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      border-radius: 50%;
+    }
+  }
+
+  &__right {
+    @include respond-to(break-md) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  &__date {
+    width: 100%;
+
+    @include respond-to(break-md) {
+      width: 45%;
+      margin-right: -4px;
+    }
+
+  }
+}
+
+// show-search --- danh sach tim kiem
+.show-search {
+  background: $bg-body;
+  margin-top: 1rem;
+  padding: 2rem 0;
+
+  &__top {
+    span {
+      display: block;
+      font-style: italic;
+      @include respond-to(break-md) {
+        display: inline-block;
+        margin-left: 2rem;
+      }
+    }
+    .btn-mapview {
+      padding: 10px 25px;
+      background-color: #fff;
+      border: none;
+      @include respond-to(break-md) {
+        padding-left: 0;
+      }
+      &:focus {
+        background: $c-main;
+      }
+      .icon-map {
+        display: inline-block;
+        margin-right: 5px;
+        width: 20px;
+        height: 20px;
+        background-image: url(../images/icon-map.svg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        -webkit-background-size: cover;
+        background-size: cover;
+      }
+    }
+   
+    label {
+      width: 100%;
+      @include respond-to(break-md) {
+        width: auto;
+        display: block;
+        text-align: right;
+      }
+      .custom-select{
+        @include respond-to(break-md) {
+          width: auto;
+        }
+      }
+      select {
+        background-color: $c-main;
+        color: #fff;
+      }
+
+    }
+  }
+
+  .owner {
+    padding: 1rem;
+    margin-top: 1rem;
+    background: #fff;
+    transition: 0.4s ease;
+    @include box-shadow;
+    &:hover{
+      box-shadow: 0px 14px 8px 0 rgba(0, 0, 0, 0.12), 0 2px 4px 0 rgba(0, 0, 0, 0.08);
+      img{transform: scale(1.06);}
+    }
+    &__img {
+      overflow: hidden;
+
+      width: 100%;
+      height: 100%;
+      img {
+        transition: 0.4s ease;
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    &__info {
+      @include respond-to(break-md) {
+        margin-top: 1.5rem;
+      }
+      
+      &--left {
+        display: flex;
+        justify-content: space-between;
+        @include respond-to(break-md) {
+          display: block;
+        }
+        @include respond-to(break-lg) {
+          display: block;
+          text-align: right;
+        }
+      }
+    }
+
+    &__btn {
+      width: auto;
+      text-align: center;
+      a {
+        display: block;
+        border: 1px solid $c-main;
+        padding: 10px 15px;
+        font-size: 19px;
+        font-weight: bold;
+        color: $c-main;
+        &:hover {
+          background-color: $c-main;
+          text-decoration: none;
+          color: #fff;
+        }
+
+      }
+    }
+
+    &__rating {
+      width: fit-content;
+      padding-right: 60px;
+
+    }
+  }
+}
+
+/*=====================END - danhsachnhaxe.html ========================*/
+
+/*===================== chitietnhaxe.html ========================*/
+.info-owner {
+  .owner__item-detail{
+    display: none;
+    transition: 0.4s ease;
+    &-hien{
+      display: block;
+    }
+    .input-group{
+      padding:10px 0;
+      label{
+        width: 150px;
+      }
+    }
+    .table tr td{
+        text-align:   center;
+        padding:15px 0;
+    }
+        input[type="number"] {
+      -webkit-appearance: textfield;
+      -moz-appearance: textfield;
+      appearance: textfield;
+    }
+
+    input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+    }
+
+    .number-input {
+      border: 1px solid #ddd;
+      //display: inline-flex;
+      //margin: 0.5rem;
+    }
+
+    .number-input button {
+      outline:none;
+      -webkit-appearance: none;
+      background-color: transparent;
+      border: none;
+      align-items: center;
+      justify-content: center;
+      width: 2rem;
+      height: 1rem;
+      cursor: pointer;
+      margin: 0;
+      position: relative;
+    }
+
+    .number-input button:before,
+    .number-input button:after {
+      display: inline-block;
+      position: absolute;
+      content: '';
+      width: 1rem;
+      height: 2px;
+      background-color: #212121;
+      transform: translate(-50%, -50%);
+    }
+    .number-input {
+      button.plus:after {
+        transform: translate(-50%, -50%) rotate(90deg);
+      }
+    }
+    .number-input {
+      input[type=number] {
+        width: 3rem;
+        //padding: .5rem;
+        border: solid #ddd;
+        border-width: 2px 2px;
+        font-size: 1.25rem;
+        font-weight: bold;
+        text-align: center;
+      }
+    }
+  }
+  background: $bg-body;
+  margin-top: -1.5rem;
+  padding: 1.5rem 0;
+  &__top{
+    @include box-shadow;
+    background: #fff;
+    padding: 1rem;
+    @include respond-to(break-md) {
+      padding: 1.5rem;
+    }
+  }
+  &__bottom{
+    @include box-shadow;
+    background: #fff;
+    padding: 1rem;
+    @include respond-to(break-md) {
+      padding: 1.5rem;
+    }
+    .info-owner-row{
+      &>.col-md-3 {
+          -ms-flex: 0 0 28%;
+          flex: 0 0 28%;
+          max-width: 28%;
+      }
+      &>.col-md-9 {
+          -ms-flex: 0 0 72%;
+          flex: 0 0 72%; 
+          max-width: 72%;
+      }
+    }
+    
+  }
+  &__left {
+    padding-top:10px;
+    img {
+      margin-bottom: 1rem;
+    }
+    table {
+      text-align: center;
+      td {
+        vertical-align: middle;
+        //font-size: 1.25rem;
+      }
+      input[type="number"] {
+        -webkit-appearance: textfield;
+        -moz-appearance: textfield;
+        appearance: textfield;
+      }
+
+      input[type=number]::-webkit-inner-spin-button,
+      input[type=number]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+      }
+
+      .number-input {
+        border: 1px solid #ddd;
+        display: inline-flex;
+        margin: 0.5rem;
+      }
+
+      .number-input button {
+        outline:none;
+        -webkit-appearance: none;
+        background-color: transparent;
+        border: none;
+        align-items: center;
+        justify-content: center;
+        width: 2rem;
+        height: 3rem;
+        cursor: pointer;
+        margin: 0;
+        position: relative;
+      }
+
+      .number-input button:before,
+      .number-input button:after {
+        display: inline-block;
+        position: absolute;
+        content: '';
+        width: 1rem;
+        height: 2px;
+        background-color: #212121;
+        transform: translate(-50%, -50%);
+      }
+      .number-input {
+        button.plus:after {
+          transform: translate(-50%, -50%) rotate(90deg);
+        }
+      }
+      .number-input {
+        input[type=number] {
+          width: 3rem;
+          padding: .5rem;
+          border: solid #ddd;
+          border-width: 0 2px;
+          font-size: 1.25rem;
+          font-weight: bold;
+          text-align: center;
+        }
+      }
+    }
+  }
+  &__btn {
+    @include respond-to(break-sm) {
+      width: 200px;
+      margin: 20px auto;
+
+    }
+  }
+
+  &__right {
+    display: none;
+    h6 {
+      text-align: right;
+      margin-right: 40px;
+      margin-top: 1rem;
+    }
+    @include respond-to(break-md) {
+      display: block;
+      .img-sub{
+        box-shadow:0 4px 8px 0 rgba(0,0,0,0.5),
+        0 2px 4px 0 rgba(0,0,0,0.4);
+      }
+    }
+  }
+  &__rating {
+    width: 80%;
+    margin-left: auto;
+    .rating, p {
+      text-align: right;
+      display: block;
+      padding-right: 40px;
+    }
+  }
+  &-order{
+    background: #fff;
+    padding: 1rem;
+    margin-top:1rem;
+    @include box-shadow;
+    table tr {
+      border-bottom:1px solid #eaeaea;
+      th{
+        text-align: center;
+        font-weight:bold;
+        padding: 10px 2px;
+      }
+      td{
+        text-align: center;
+        padding:8px 0;
+      }
+      &:last-child{
+        font-weight:bold;
+      }
+    }
+  }
+}
+
+/*===================== END---chitietnhaxe.html ========================*/
+
+/*===================== datxe.html ========================*/
+.booked {
+  background: $bg-body;
+  padding: 2rem 0 3rem;
+  .container {
+    @include respond-to(break-lg) {
+      max-width: 60%;
+    }
+  }
+  &__content {
+    @include box-shadow;
+    background: #fff;
+    padding: 1.25rem;
+    td {
+      text-align: center;
+    }
+  }
+  &__btn {
+    margin-top: 1.5rem;
+    text-align: center;
+    button {
+      font-size: 1.25rem;
+      @include respond-to(break-md) {
+        width: 200px;
+      }
+    }
+    @include respond-to(break-md) {
+      margin: 1.5rem auto ;
+    }
+  }
+  textarea {
+    resize: none;
+    background: #f4f4f4;
+    font-style: italic;
+  }
+}
+
+/*===================== END---datxe.html ========================*/
+/*===================== customer.html ========================*/
+.customer {
+  background: $bg-body;
+  //margin-top: -2rem;
+  padding: 2rem 0;
+  .table{
+    thead{
+      tr{
+        td{
+          padding:10px 0;
+          text-align: center;
+        }
+      }
+    }
+  }
+  &__left {
+    text-align: center;
+    background: #fff;
+    padding: 2rem;
+    margin-bottom: 1.5rem;
+    @include box-shadow;
+    img {
+      width: 150px;
+      height: 150px;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      border-radius: 50%;
+    }
+    .left-name {
+      margin: 1rem 0;
+      font-size: 1.25rem;
+    }
+    .left-btns {
+      display: flex;
+      @include respond-to(break-md) {
+        display: block;
+      }
+      .left-btn {
+        text-align: center;
+        padding: 10px 1rem;
+        width: 100%;
+        margin-bottom: 10px;
+        border: 1px solid #b4b4b4;
+        @include respond-to(break-lg) {
+          position: relative;
+          text-align: left;
+          border: none;
+          margin-bottom: 0;
+        }
+        button {
+          display: block;
+          outline: none;
+          margin: 0 auto;
+          border: none;
+          background: none;
+          .icon-btn {
+            font-size: 1.25rem;
+          }
+          .icon-arrow-right {
+            display: none;
+            @include respond-to(break-lg) {
+              display: block;
+              position: absolute;
+              right: 20px;
+              top: 12px;
+            }
+          }
+          span {
+            display: none;
+            @include respond-to(break-lg) {
+              display: inline-block;
+              margin-left: 1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &__right {
+    background: #fff;
+    padding: 2rem 1rem;
+    @include box-shadow;
+    @include respond-to(break-lg) {
+      padding: 2rem;
+    }
+    #customer-booked {
+      display: none;
+    }
+    form {
+      padding: 0 1rem;
+      input[type="submit"] {
+        font-weight: bold;
+        background: #fff;
+        color: $c-main;
+        border: 1px solid $c-main;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+          background: $c-main;
+          color: #fff;
+        }
+      }
+    }
+    h6 {
+      margin-bottom: 1rem;
+    }
+    .btn-wrap {
+      text-align: right;
+    }
+  }
+}
+/*===================== END---customer.html ========================*/
+
+/*=====================danhsachthuexe.html ========================*/
+.list-booked {
+  width: 100%;
+  padding: 1rem 0;
+
+  .owner-tab-wrap {
+    border-bottom: 1px solid $c-main;
+    margin-bottom: 1rem;
+  }
+
+  .owner-tab {
+    border-bottom: none;
+    &__item {
+      padding: 0 1.25rem;
+      line-height: 40px;
+     //TODO
+     &--active, &:hover {
+       position: relative;
+       &::after {
+         content: '';
+         position: absolute;
+         width: 100%;
+         height: 3px;
+         background-color: $c-main;
+         bottom: 0;
+         left: 0;
+       }
+     }
+      a {
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+/*=====================END---danhsachthuexe.html ========================*/
+
+/*===================== chitiethoadoncuaKH.html ========================*/
+
+/*=====================END---chitiethoadoncuaKH.html ========================*/
+.bill {
+  &__name {
+    display: flex;
+    .user-avt {
+      display: inline-block;
+      width: 70px;
+      height: 70px;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      border-radius: 50%;
+    }
+    .user-name {
+      font-weight: bold;
+      margin-left: 1rem;
+      line-height: 70px;
+    }
+  }
+  &__nav {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding-bottom: 1rem;
+    .nav-link {
+      display: inline;
+    }
+    span {
+      display: inline-block;
+      margin-left: -10px;
+      margin-right: -10px;
+    }
+  }
+}
+
+/*===================== quytrinhlamchuxe.html ========================*/
+.step-owner {
+  background: $bg-body;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+
+  #step1,
+  .step2,
+  #step3 {
+    @include respond-to(break-md) {
+      width: 75%;
+      margin: 0 auto;
+      padding: 1rem 0;
+    }
+    @include respond-to(break-lg) {
+      width: 65%;
+    }
+  }
+  .progressbar {
+    margin-bottom: 1rem;
+    width: 100%;
+    counter-reset: step;
+    border-bottom: none;
+    position: relative;
+    z-index: 0;
+    .nav-item {
+      list-style-type: none;
+      width: 33.33%;
+      float: left;
+      font-size: 12px;
+      position: relative;
+      text-align: center;
+      text-transform: uppercase;
+      color: #7d7d7d;
+      margin-bottom: 0;
+      &:before {
+        width: 30px;
+        height: 30px;
+        content: counter(step);
+        counter-increment: step;
+        line-height: 30px;
+        border: 2px solid #7d7d7d;
+        display: block;
+        text-align: center;
+        margin: 0 auto 10px auto;
+        border-radius: 50%;
+        background-color: white;
+      }
+      &::after {
+        width: 100%;
+        height: 2px;
+        content: '';
+        position: absolute;
+        background-color: #7d7d7d;
+        top: 15px;
+        left: -50%;
+        z-index: -1;
+      }
+      &:first-child:after {
+        content: none;
+      }
+      .nav-link {
+        border: none;
+      }
+    }
+    .current {
+      color: $c-main;
+      &:before {
+        border-color: $c-main;
+      }
+    }
+    .current + nav-item::after {
+      background-color: $c-main;
+    }
+  }
+  .mytab-content {
+    background-color: #fff;
+    @include box-shadow;
+
+    &__btn {
+      width: 200px;
+      margin: 0 auto;
+    }
+    .custom-file {
+      height: auto;
+    }
+    .mynav-tabs {
+      text-align: center;
+      &__item {
+        background: red;
+      }
+    }
+  }
+}
+
+/*===================== END---quytrinhlamchuxe.html ========================*/
+
+/*===================== khuyenmai.html ========================*/
+.discounts {
+  &__add{
+    text-align: right;
+    transition: 0.4s ease;
+    font-weight: bold;
+    .icon-add{
+      i{
+          border: 1px solid #212529;
+          border-radius: 50%;
+          height: 20px;
+          width: 20px;
+          line-height: 20px;
+          text-align: center;
+      }
+    }
+    &:hover{
+        font-size: 15px;
+      }
+  }
+  &__item {
+    padding:20px;
+    text-align: center;
+    margin:10px 0;
+    transition: 0.4s ease;
+    &:hover{
+      transform: scale(1.02);
+    }
+    .form-group{
+      line-height: 35px;
+      padding-bottom:10px;
+      label{
+        float: left;
+        width: 30%;
+      }
+      select{
+        font-size: 14px;
+        float:left;
+        width: 60%;
+      }
+      span{
+        float: left;
+        width: 10%;
+      }
+    }
+    .discounts__txt{
+      padding:5px 0;
+      margin:0;
+    }
+    @include box-shadow;
+  }
+}
+/*===================== END---khuyenmai.html ========================*/
+/*===================== Map view =========================*/
+.map-view{
+  .owner__info{
+    font-size: 13px;
+    margin-top:0;
+  }
+  p{
+    margin-bottom: 0;
+  }
+  .owner__rating{
+    float:left;
+   
+         padding-right: 20px;
+    padding-left: 0;
+  }
+  .owner__btn{
+    float:left;
+    a{
+      padding: 6px 10px;
+    font-size: 12px;
+    }
+  }
+ .g-rating::after{
+  font-size: 30px;
+  width: auto;
+ }
+ iframe{
+    margin-top: 1rem;
+ }
+}
+/*=====================danhgia.html ========================*/
+.customer-rating-wrap {
+  background: #fff;
+  padding: 1rem 2rem;
+  @include box-shadow;
+  @include respond-to(break-md) {
+    padding: 2rem 5rem;
+  }
+  .customer-rating {
+    //border: 1px solid #b4b4b4;
+    padding: 1.5rem 2rem;
+    margin-bottom: 2rem;
+    @include box-shadow;
+
+    .average-rating {
+      margin: 1rem 0;
+      .average-rating-wrap {
+        width: 100%;
+        margin-top: 1rem;
+        @include respond-to(break-lg) {
+          width: auto;
+        }
+      }
+      &__box {
+        padding: 1.5rem;
+        background-color: #fff;
+        text-align: center;
+        border: 1px solid #b4b4b4;
+        //width: fit-content;
+        height: 100%;
+
+        .box-row {
+          .side {
+            float: left;
+            width: 15%;
+            margin-top: 10px;
+            font-weight: 400;
+          }
+          .middle {
+            float: left;
+            width: 70%;
+            margin-top: 10px;
+            .bar-container {
+              width: 100%;
+              height: 16px;
+              background-color: #f1f1f1;
+              text-align: center;
+              margin-top: 5px;
+            }
+          }
+          .right {
+            text-align: right;
+
+          }
+
+          .bar-5 {
+            background: $c-main;
+            width: 100%;
+            height: 100%;
+          }
+          .bar-0 {
+            background: $c-main;
+            width: 5%;
+          }
+        }
+      }
+      &__value {
+        color: $c-main;
+        line-height: 1;
+        font-size: 5rem;
+      }
+      &__amount {
+        font-weight: bold;
+        margin-bottom: 0;
+      }
+
+      &__content {
+        margin: 1rem 0;
+        h6 {
+          font-weight: bold;
+        }
+        p {
+          margin-bottom: 0;
+        }
+      }
+      &__item {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+  .detail-rating {
+    &__item {
+      list-style: none;
+      padding: 1.5rem 2rem;
+      margin-bottom: 1.25rem;
+
+      @include box-shadow;
+    }
+    &__top {
+      display: flex;
+      justify-content: space-between;
+      .top-left {
+        &__img {
+          float: left;
+          width: 50px;
+          height: 50px;
+          img {
+            width: 100%;
+            height: 100%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            border-radius: 50%;
+          }
+        }
+        &__info {
+          float: left;
+          margin-left: 1rem;
+        }
+      }
+      .top-right {
+        .time {
+          display: none;
+          @include respond-to(break-md) {
+            display: inline;
+          }
+        }
+        .num {
+          background: $c-main;
+          color: #fff;
+          padding: 10px;
+        }
+      }
+    }
+  }
+}
+/*=====================END---danhgia.html ========================*/
+
+
+/*form dang nhap dang ki*/
+.form-sign {
+  width: 500px;
+  margin: 0 auto;
+  border: 1px solid #d2d2d2;
+  color: #000;
+  position: fixed;
+  top: 0;
+  background: #fff;
+  left: 50%;
+  z-index: 99;
+  transform: translateX(-50%) translateY(10%);
+  display: none;
+}
+
+.form-sign .input-group {
+  padding: 10px 0;
+}
+
+.form-sign ul li {
+  padding: 5px 0;
+  text-align: center;
+  width: 50%;
+  display: inline-block;
+  text-transform: uppercase;
+  background: #0091e8;
+}
+
+.form-sign ul li.active {
+  background: #006bab;
+}
+
+.form-sign ul li a {
+  color: #fff;
+}
+
+.form-sign h3 {
+  font-size: 20px;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.form-sign-social {
+  text-align: center;
+}
+
+.form-sign-forgot {
+  font-size: 14px;
+  text-align: center;
+  text-decoration: underline;
+  padding: 20px 0;
+}
+
+.form-sign-social i {
+  font-size: 25px;
+  padding: 10px 10px;
+}
+
+i.fa-facebook-square {
+  color: #0098c7;
+}
+
+i.fa-google-plus-square {
+  color: #f12b2b;
+}
+
+.form-sign label {
+  padding: 0 0 0 20px;
+  width: 150px;
+}
+
+.form-sign input {
+  width: 300px;
+}
+
+.form-sign input[type=checkbox] {
+  width: auto;
+  margin: 6px;
+}
+
+.form-sign input[type=submit] {
+  width: auto;
+  padding: 5px 12px;
+  text-align: center;
+  margin: 0 auto;
+  background: #0091e8;
+  color: #fff;
+  border: none;
+}
+
+// .fade {
+//   opacity: 0;
+// }
+
+// .fade.in, .fade.active.show {
+//   opacity: 1;
+// }
+.form-sign-close{
+  position: absolute;
+  top:-10px;
+  right: 0;
+}
+.form-sign-close i{
+  font-size: 30px;
+}
+/*form dang nhap dang ki*/
+/*popup danhgia*/
+.popup__danhgia {
+  width: 500px;
+  margin: 40px auto;
+  border: 1px solid #d2d2d2;
+  color: #000;
+}
+
+.popup__danhgia h3 {
+  font-size: 20px;
+  padding: 0 20px 20px;
+}
+
+.popup__danhgia ul {
+  margin: 0;
+  padding: 0;
+}
+
+.popup__danhgia form {
+  padding: 30px;
+  margin: 0 auto;
+}
+
+.popup__danhgia form input[type=text] {
+  width: 333px;
+}
+
+form input[type=submit] {
+  padding: 2px 20px;
+  border: none;
+  background: #0089dc;
+  color: #fff;
+}
+
+.popup__danhgia-close {
+  text-align: right;
+  padding-right: 10px;
+}
+
+.popup__danhgia ul li {
+  display: block;
+  padding: 10px 40px 0;
+}
+
+.popup__danhgia ul li span:nth-child(2) {
+  /* width: 100px; */
+  text-align: right;
+  float: right;
+}
+
+.popup__danhgia ul li span:nth-child(2) i {
+  padding: 0 9px;
+  color: #f9f900;
+}
+
+/*popup__thongbao*/
+.popup__thongbao {
+  width: 500px;
+  margin: 0 auto;
+  padding: 40px 0;
+  border: 1px solid #d2d2d2;
+  background: #Fff;
+}
+
+.popup__thongbao p {
+  font-size: 20px;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.popup__thongbao button {
+  padding: 2px 20px;
+  border: none;
+  background: #0089dc;
+  color: #Fff;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+}
+// back-to-top
+.back-to-top { position: fixed; bottom: 35px; right: 10px; display: none; cursor: pointer; }
+.back-to-top i { background: #61cdef; padding: 5px 10px; color: #fff; font-size: 30px; font-weight: bold; }
+
+/*popup__thongbao*/
+.popup__thongbao{width:500px;margin:0 auto;padding:40px 0;border:1px solid #d2d2d2;display: none;}
+.popup__thongbao p{font-size:20px;text-align:center;padding:10px 0;}
+.popup__thongbao button{padding:2px 20px;border:none;background:#0089dc;color:#Fff;margin:0 auto;display:block;text-align:center;}
+.popup__thongbao.booked__hien {
+    display: block;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+
+//MAP
+.map {
+    position: fixed;
+    top: 300px;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    border: 7px solid #d8d8d8;
+    display: none;
+    i{
+      position: absolute;
+      top: -8px;
+      right: -8px;
+      color: #000;
+      font-size: 20px;
+    }
+}

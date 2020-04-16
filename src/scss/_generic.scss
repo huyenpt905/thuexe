@@ -1,0 +1,528 @@
+/*
+BEM -- class name syntax:
+Block--Element__Modifier
+
+Generic – Đặt lại hoặc chuẩn hoá styles, định nghĩa box-sizing, định nghĩa các tag, styles chung cho nhiều phần…
+ Đây là lớp đầu tiên tạo ra CSS thực tế.
+ */
+/*
+bao gồm css của header,  footer, các thành phần dùng chung
+*/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+html {
+  font-size: 1rem;
+  //@include respond-to(break-sm) {
+  //  font-size: 1.25rem;
+  //}
+  //@include respond-to(break-md) {
+  //  font-size: 1.5rem;
+  //}
+  //@include  respond-to(break-lg) {
+  //  //font-size: 1.25rem;
+  //}
+  //@include  respond-to(break-xl) {
+  //  font-size: 2rem;
+  //}
+}
+
+a {
+  font-family: Roboto, sans-serif;
+  font-size: 1rem;
+  color: #111111;
+}
+a:hover{
+  text-decoration: none;
+}
+//g-nav: nav: thue xe, thue cano
+.g-nav {
+  border-bottom: 2px solid $c-main;
+  width: 100%;
+  //margin-bottom: 2rem;
+
+  .nav {
+    padding: 2rem 1rem 0 1rem;
+    @include respond-to(break-md) {
+      width: 90%;
+      margin: 0 auto;
+    }
+    .nav-link {
+      color: #fff;
+      padding: 5px 1.5rem;
+    }
+    .active {
+      position: relative;
+      display: inline-block;
+      background-color: $c-main;
+      @include respond-to(break-md) {
+        background: $c-main;
+      }
+      //&::after {
+      //  content: '';
+      //  width: 100%;
+      //  height: 3px;
+      //  position: absolute;
+      //  background-color: $c-main;
+      //  left: 0;
+      //  bottom: 0;
+      //  @include respond-to(break-md) {
+      //    display: none;
+      //  }
+      //}
+    }
+  }
+}
+
+//bottonn
+.btn {
+  display: inline-block;
+  width: 100%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: $c-main;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+
+}
+.btn--radius {
+  -webkit-border-radius: 500px;
+  -moz-border-radius: 500px;
+  border-radius: 500px;
+}
+.btn--main {
+  background: $c-main;
+  color: #fff;
+  padding: 10px 25px;
+
+  &:hover {
+    background: #fff;
+    color: $c-main;
+    @include respond-to(break-md) {
+      background: transparent;
+    }
+  }
+}
+//la tieu de moi section- trang chu
+.section-title {
+  color: $c-main;
+  margin: 1.5rem 0;
+}
+//owl-dots
+.owl-dots {
+  margin-top: 5px;
+  text-align: center;
+  .owl-dot {
+    background-color: #ddd;
+    display: inline-block;
+    margin: 0 5px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    .active {
+      background-color: $c-main;
+    }
+  }
+
+}
+
+//rating
+.g-rating {
+  position: relative;
+  &::after {
+    content: '3';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 40px;
+    color: $c-main;
+  }
+  i {
+    color: $c-main;
+  }
+}
+.rating {
+  color: $c-main;
+  font-size: 1.25rem;
+}
+
+//chat
+.chat {
+  position: fixed;
+  right: 1rem;
+  bottom: 2rem;
+  &__icon {
+    font-size: 3rem;
+    color: $c-main;
+  }
+  &__content {
+    display: none;
+  }
+}
+
+//color global
+.c-main {
+  color: $c-main!important;
+}
+.c-black {
+  color: #111!important;
+}
+.bg-body {
+  background-color: $bg-body;
+}
+/*
+* owner-nav : menu làm nhà xe
+*/
+.owner-nav {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  &__list {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item {
+    width: calc(100%/6 - 3px);
+    text-align: center;
+    list-style: none;
+    background: $c-main;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    
+    @include respond-to(break-md) {
+
+    }
+    padding: 1rem 0;
+    a{
+      color:#fff;
+    }
+    &:last-child {
+      border-right: none;
+    }
+    &:hover{
+      background:#0286c7;
+      a{
+        color:#fff;
+      }
+    }
+    &:active{
+      background:#0286c7;
+    }
+    &:focus{
+      background:#0286c7;
+    }
+  }
+  &__link {
+
+  }
+  &__txt {
+    display: none;
+    @include respond-to(break-lg) {
+      display: inline;
+    }
+  }
+}
+
+/*
+* table -- owner
+*/
+.table {
+  transition: 0.5s;
+  padding-bottom: 0;
+  width: 100%;
+  @include box-shadow;
+
+  &__head {
+    display: none;
+    visibility: hidden;
+    border-bottom: 2px solid $c-main;
+    @include respond-to(break-md) {
+      width: 100%;
+      display: table-header-group;
+      visibility: visible;
+    }
+     .table__cell--head{
+        background: #e4e4e4;
+        padding: 15px 0;
+      }
+  }
+
+  &__body,
+  &__row,
+  &__cell {
+    display: block;
+    border: 0;
+    padding: 0;
+    text-align: left;
+    white-space: normal;
+    @include respond-to(break-md) {
+      text-align: center;
+    }
+    .table__head {
+      // desktop
+      @include respond-to(break-md) {
+        padding: 20px;
+        text-align: center;
+        font-size: 1.35rem;
+        background: #fff;
+        border: 1px solid #b4b4b4;
+      }
+
+    }
+    .btn-detail {
+      color: $c-main;
+      font-style: italic;
+    }
+  }
+
+  &__row {
+    margin-bottom: 10px;
+    background-color: #fff;
+    // Desktop
+    @include respond-to(break-md) {
+      display: table-row;
+      width: 100%;
+      .table__cell {
+        display: table-cell;
+
+      }
+    }
+    &:nth-child(even) {
+      background-color: #fff;
+    }
+  }
+
+  &__cell {
+    padding: 6px;
+    transition: 1s;
+  }
+
+  &__body {
+    display: table-row-group;
+  }
+
+  &__cell[data-title]:before {
+    display: inline-block;
+    min-width: 200px;
+    content: attr(data-title) ":";
+    font-weight: bold;
+    // Desktop
+    @include respond-to(break-md) {
+      display: none;
+      content: "";
+    }
+  }
+
+  &__cell:empty {
+    display: none;
+    // Desktop
+    @include respond-to(break-md) {
+      display: table-cell;
+    }
+  }
+
+  &__cell--head {
+    // Desktop
+    @include respond-to(break-md) {
+      &[data-title]:before {
+        display: none;
+        content: "";
+      }
+    }
+  }
+
+  &__cell--spanned {
+    @include respond-to(break-md) {
+      font-size: 1rem;
+      font-weight: bold;
+      text-align: left;
+    }
+  }
+}
+
+/*
+* header
+*/
+header {
+  -webkit-box-shadow: 0 6px 6px -6px #777;
+  -moz-box-shadow: 0 6px 6px -6px #777;
+  box-shadow: 0 6px 6px -6px #777;
+  position: relative;
+  .container-fluid {
+    width: 95%;
+    margin: 0 auto;
+  }
+  .navbar {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .h-logo {
+    display: inline-block;
+    width: 200px;
+  }
+  .h-link {
+    &:hover {
+      color: $c-main;
+    }
+  }
+  .h-email {
+    color: $c-main;
+    &:hover {
+      -webkit-transform: scale(1.5);
+      -moz-transform: scale(1.5);
+      -ms-transform: scale(1.5);
+      -o-transform: scale(1.5);
+      transform: scale(1.5);
+    }
+  }
+  .icon-bar {
+    background-color: $c-main;
+    width: 20px;
+    height: 3px;
+    display: block;
+    margin-bottom: 2px;
+  }
+  .h-user {
+    margin-top: 5px;
+    &__btn {
+      background-color: #fff;
+      width: 120%;
+      display: inline-block;
+      outline: none;
+      border: none;
+    }
+    .dropdown-toggle::after {
+      display: none;
+    }
+    &__name {
+      padding-right: 20px;
+      position: relative;
+      &::after {
+        content: '';
+        position: absolute;
+        border-top: 8px solid $c-main;
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+        bottom: 5px;
+        right: 1px;
+      }
+    }
+    &__avt {
+      width: 40px;
+      height: 40px;
+      display: inline-block;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      border-radius: 50%;
+    }
+  }
+}
+
+/*
+footer
+*/
+.f-sub {
+  text-align: center;
+  padding: 2rem 0;
+  .f-sub-nav {
+    li {
+      display: inline-block;
+      a {
+        &:hover {
+          text-decoration: none;
+          color: $c-main;
+        }
+      }
+      span {
+        margin: 0 20px;
+      }
+    }
+  }
+  .f-sub-copyright {
+    span {
+      font-weight: bold;
+    }
+  }
+}
+.footer {
+  background: #008ca8;
+  padding: 2rem 1rem;
+  text-align: center;
+  color: #fff;
+  @include respond-to(break-md) {
+    background: url("../images/bg-footer.png") no-repeat center/cover;
+    height: 500px;
+    position: relative;
+  }
+  .f-slogan {
+    font-weight: bold;
+    @include respond-to(break-md) {
+      position: absolute;
+      width: 55%;
+      background-color: $c-main-rgba;
+      padding: 1rem;
+      font-size: 2rem;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      -o-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+    }
+  }
+  .f-wrap {
+    @include respond-to(break-md) {
+      position: absolute;
+      bottom: 0;
+    }
+  }
+  .f-nav {
+    li {
+      display: inline-block;
+      a {
+        color: #fff;
+        padding: 0;
+        @include respond-to(break-md) {
+
+        }
+        &:hover {
+          color: $c-main;
+          text-decoration: none;
+        }
+      }
+      span {
+        margin: 0 1rem;
+      }
+    }
+  }
+  .f-copyright {
+    font-size: 0.875rem;
+    @include respond-to(break-md) {
+      text-align: left;
+    }
+    span {
+      font-weight: bold;
+    }
+  }
+}
+
+
+
+
